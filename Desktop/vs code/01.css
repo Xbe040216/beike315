@@ -1,0 +1,36 @@
+p{
+    color: blue;
+}
+.jd{
+    text-align: center;
+    height: 200px;
+    width: 150px;
+    background-color: red;
+    color: white;
+    font-family: 楷体;   
+    font-size: 14px;
+    line-height: 1.5;   
+    background-image: url("./photo1.png");
+}
+.jd>div{
+    color: yellow;
+    font-size: 20px;
+
+}
+
+div div{
+    background-color: bisque;
+    color: black;
+}
+
+div>span{
+    color: brown;
+}
+
+divp{
+    color: chartreuse;
+}
+
+span{
+    font-size: 25px;
+}

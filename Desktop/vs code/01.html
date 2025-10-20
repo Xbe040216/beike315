@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页</title>
+    <link rel="stylesheet" href="./01.css">
+</head>
+<body>
+    <p>!+tab生成骨架</p>
+    <p>多加注释,提高可读</p>
+    <p>标题hn,段落p</p>
+    <p>换行br,水平线hr,都是单标签</p>
+    <hr>
+    <p>文本格式化标签,strong<strong>加粗</strong>,em<em>倾斜</em>,ins<ins>下划线</ins>,del<del>删除线</del></p>
+    <hr>
+    <p>图片生成img</p>
+    <img src="./photo.png" alt="无法显示" title="这是一幅图片" width="100" >
+    图片宽高默认等比缩放
+    <p>如果网速慢，加载不出来，弹出如下标识</p>
+    <img src="" alt="无法加载图片">
+    <p>../访问上级目录</p>
+    <img src="https://www.itheima.com/images/logo.png" alt="图片无法显示" title="这是北科大的校徽" height="100">
+    <p>超链接a,在新窗口打开链接target="_blank",空链接在href中打#号</p>
+    <a href="https://www.ustb.edu.cn/" target="_blank">北科大官网</a>
+    <br>
+    <p>音频audio  视频video  显示控制台controls  循环loop  只有视频中才有的静音播放muted  自动播放(视频中必须要有muted才有用)autoplay  控制视频显示窗口的大小height</p>
+    <audio src="" controls loop autoplay></audio>
+    <br>
+    <video src="C:\Users\XBE28\Desktop\bili缓存视频\“每次心情在低谷的时候听一遍《The Nights》，精神立马振作起来。”.mp4" controls loop muted height="800"></video>
+
+    <ul><strong>无序列表标题</strong>
+        <li>无序列表ul</li>
+        <li>列表条目li</li>
+        <li>ul里只能包裹li标签</li> 
+    </ul>
+
+    <ol>
+        <li>这是有序列表</li>
+        <li>列表ol</li>
+        <li>条目li</li>
+    </ol>
+
+    <dl><em>定义列表dl</em>
+        <dt>定义标题dt</dt>
+        <dd>定义条目dd</dd>
+    </dl>
+
+    <table border="1">
+        <ins>这是表格table，新建行用tr，边界线border</ins>
+        <thead>  
+            <tr>           
+                <th>表头单元格th</th>
+                <th>表头标识thead</th>
+                 <th>跨行合并rowspan</th>     
+            </tr>
+        </thead>  
+        <tbody>
+            <tr>   
+                <td>表格单元格td</td>
+                <td>表格主体tbody</td>
+                <td rowspan="2"></td>          
+            </tr>
+            <tr>
+                <td colspan="2">跨列合并colspan</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>表格底部用tfoot</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>这是文本框</p>
+    text：<input type="text" placeholder="这是站位文本">
+    <p>这是密码框</p>
+    password:<input type="password" placeholder="这是站位文本">
+    <p>这是单选框</p>
+    radio:  <input type="radio" name="gender" checked>checked表示默认选择 <input type="radio" name="gender">name是控件名称，同一个名称的控件只能选一个
+    <P>这是多选框</P>
+    checkbox:<input type="checkbox" checked>默认也用checked
+    <p>上传文件，multiple实现文件多选</p>
+    file:<input type="file" multiple>
+    <br>
+    <br>
+    <p>下拉菜单select</p>
+    城市
+    <select>
+        <option selected>默认selected</option>
+        <option>武汉</option>
+        <option>十堰</option> 
+        <option>北京</option>
+    </select>
+    <br><br>
+    <textarea cols="80" rows="10">发布你的想法</textarea>
+    <br><br>
+    <input type="radio" name="man" id="man"><label for="man">标签label的第一种用法</label>
+    <label><input type="radio" name="man">第二种用法，不需要设置id</label>
+
+    <form>
+        账号：<input type="text">
+        <button type="reset">重置</button>
+    </form>
+    <div>这是div标签，自带换行</div>
+    <span>这是span标签，不换行</span>
+    <p>字符实体中，空格&nbsp，大于号&gt，小于号&lt</p>
+
+    <div class="jd">
+        <h1>京东自营</h1>
+        <img src="./photo.png" alt="错误" width="50">
+        <div>倒计时24小时</div>
+    </div>
+    <div>
+        <div>
+            这是后代选择器：选择器1 选择器2{}
+        </div>
+        <span>
+            子代选择器：选择器1>选择器2{}
+        </span>
+        <p> 交集选择器：选择器1,选择器2{}   并集选择器：选择器1选择器2{}</p>   
+    </div>
+    <div>
+        伪类选择器:用于超链接:link访问前:visited访问后:hover鼠标悬停时:active点击时
+    </div>
+    
+    <span>css三大特性：
+        <p>继承性:子标签会继承父标签自己没有的css属性</p> 
+        <p>层叠性：同名的css类中相同的css属性会覆盖，不同的css属性会叠加</p>
+        <p>存在优先级：通配符&lt标签&lt类&ltID&lt行内&lt！important </p>
+    </span>
+
+    <span>css背景属性：
+        图background-image <br>
+        平铺方式background-repeat <br>
+        位置background-position <br>
+        大小background-size 属性：cover填充 contain适应<br> 
+        固定background-attachment <br>
+        复合写法background
+    </span>
+
+</body>
+</html>     
